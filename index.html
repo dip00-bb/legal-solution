@@ -50,8 +50,11 @@
 
 </head>
 
-<body>
-    <header>
+<body class="flex flex-col items-center ">
+
+    <!-- header section -->
+
+    <header class="w-[95%] md:w-[80%] mb-8 md:mb-[4.375rem]">
         <nav class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -95,7 +98,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl"><img src="./images/logo2.png" alt=""></a>
+                <a class="btn btn-ghost text-xl hidden sm:block"><img src="./images/logo2.png" alt=""></a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -146,11 +149,113 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <a class="btn">Button</a>
+                <a class="btn bg-brown-1 md:px-[1.9rem] py-[1rem] font-poppins text-white font-semibold">Free Consultation</a>
             </div>
         </nav>
     </header>
 
+
+    <!-- hero -->
+
+    <section class="w-[95%] md:w-[80%] mb-8 md:mb-[4.375rem] flex justify-center items-center rounded-[0.5rem] py-8 md:py-20"  style="background-image: url('./images/banner.png'); background-size: cover; background-position: center; ">
+        <div class="w-[90%] md:w-[60%] ">
+            <h1 class="text-[2rem] md:text-[4.5rem] font-garamond font-extrabold text-center mb-[1.5rem] text-white">We Provide Effective <br class="hidden"> Legal Solutions</h1>
+            <p class="text-center mb-[1.5rem] text-dark-6 font-normal text-[0.8rem] md:text-[1rem]"> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <form action="" class="w-full flex flex-col md:flex-row  justify-center gap-4 py-4">
+                <input type="text" placeholder="Search your services" class="w-[100%] md:w-[50%] rounded-[0.5rem] pl-[1.25rem] py-[1.1rem] ;">
+                <button class="px-[2.4375rem] py-[1.1rem] bg-brown-1 rounded-[0.5rem]">Search</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- main -->
+
+    <main class="w-[95%] md:w-[80%] mb-8 md:mb-[4.375rem]">
+
+        <!-- legal practice -->
+        <section>
+            <h1 class="text-center text-dark-2 font-garamond text-[2.5rem] font-extrabold mb-[1.5rem]"  >The Legal Practice Area</h1>
+            <p class="text-center text-[1rem] text-dark-3 font-poppins mb-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+            <!-- grid container -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+
+
+
+                <div class="px-[4.5rem] pt-[3.5rem] border-b-[1px] border-dark-6">
+                    <img class="mx-auto mb-8" src="./images/business.png" alt="business">
+                    <h4 class="text-center text-[2rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Business Law</h4>
+                    <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                   <a href=""><img class="mx-auto mb-8" src="./images/Frame.png" alt="right arrow"></a> 
+                </div>
+
+
+
+
+                <div class="px-[4.5rem] pt-[3.5rem] border-b-[1px] border-dark-6 sm:border-l lg:border-r lg:bg-dark-6">
+                    <img class="mx-auto mb-8" src="./images/criminal.png" alt="business">
+                    <h4 class="text-center text-[2rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Criminal Law</h4>
+                    <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href=""><img class="mx-auto mb-8" src="./images/Frame.png" alt="right arrow"></a> 
+                </div>
+
+
+
+                <div class="px-[4.5rem] pt-[3.5rem] sm:border-r lg:border-r-0 border-b-[1px] border-dark-6">
+                    <img class="mx-auto mb-8" src="./images/child.png" alt="business">
+                    <h4 class="text-center text-[2rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Child Support</h4>
+                    <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href=""><img class="mx-auto mb-8" src="./images/Frame.png" alt="right arrow"></a> 
+                </div>
+
+
+
+
+
+
+                <div class="px-[4.5rem] pt-[3.5rem] border-b border-dark-6">
+                    <img class="mx-auto mb-8" src="./images/business.png" alt="business">
+                    <h4 class="text-center text-[2rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Business Law</h4>
+                    <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href=""><img class="mx-auto mb-8" src="./images/Frame.png" alt="right arrow"></a> 
+                </div>
+
+
+
+
+                <div class="px-[4.5rem] pt-[3.5rem] border-b border-dark-6 lg:border-l border-r">
+                    <img class="mx-auto mb-8" src="./images/criminal.png" alt="business">
+                    <h4 class="text-center text-[2rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Criminal Law</h4>
+                    <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href=""><img class="mx-auto mb-8" src="./images/Frame.png" alt="right arrow"></a> 
+                </div>
+
+
+
+                <div class="px-[4.5rem] pt-[3.5rem] border-b border-dark-6">
+                    <img class="mx-auto mb-8" src="./images/child.png" alt="business">
+                    <h4 class="text-center text-[2rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Child Support</h4>
+                    <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href=""><img class="mx-auto mb-8" src="./images/Frame.png" alt="right arrow"></a> 
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+    </main>
 
 
 
