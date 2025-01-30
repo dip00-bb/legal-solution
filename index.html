@@ -15,6 +15,12 @@
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- font awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         .font-poppins {
             font-family: "Poppins", serif;
@@ -54,107 +60,37 @@
 
     <!-- header section -->
 
-    <header class="w-[95%] md:w-[80%] mb-8 md:mb-[4.375rem]">
-        <nav class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                    </ul>
-                </div>
-                <a class="btn btn-ghost text-xl hidden sm:block"><img src="./images/logo2.png" alt=""></a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li>
-                        <details>
-                            <summary>Service</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
 
 
-                    <li>
-                        <details>
-                            <summary>Cases</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
 
 
-                    <li>
-                        <details>
-                            <summary>Blog</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
 
-                    <li>
-                        <details>
-                            <summary>Contact Us</summary>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
+    <header class="w-[95%] md:w-[80%] mb-8 md:mb-[4.375rem] flex justify-between items-center mt-6">
+        <div>
+            <img src="./images/logo2.png" alt="">
+        </div>
 
 
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a class="btn bg-brown-1 md:px-[1.9rem] py-[1rem] font-poppins text-white font-semibold">Free
-                    Consultation</a>
-            </div>
-        </nav>
+
+        <div class="breadcrumbs text-sm hidden md:block">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li>Cases</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
+        <div>
+            <a class="btn bg-brown-1 md:px-[1.9rem] py-[1rem] font-poppins hidden md:block text-white font-semibold">Free
+                Consultation</a>
+                <i class="fa-solid fa-bars block md:hidden pr-2"></i>
+        </div>
     </header>
 
+
+ 
 
     <!-- hero -->
 
@@ -423,7 +359,8 @@
 
         <section class="mb-8 md:mb-[4.375rem]">
             <h1 class="text-center text-dark-2 text-[2.5rem] font-extrabold mb-[1.5rem] font-garamond">Frequently Asked
-                <span class="text-bike-primary">Questions</span></h1>
+                <span class="text-bike-primary">Questions</span>
+            </h1>
             <p class="text-center text-dark-3 text-[1rem] mb-[1.5rem] font-poppins">There are many variations of
                 passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
                 humour.</p>
@@ -481,14 +418,17 @@
         </section>
 
 
-        <!-- contact us --> 
+        <!-- contact us -->
 
 
 
 
         <section class="mb-8 md:mb-[4.375rem] ">
-            <h1 class="text-center text-dark-2 text-[2.5rem] font-extrabold mb-[1.5rem] font-garamond">Contact With Us</h1>
-            <p class="text-center text-dark-3 text-[1rem] mb-[1.5rem] font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <h1 class="text-center text-dark-2 text-[2.5rem] font-extrabold mb-[1.5rem] font-garamond">Contact With Us
+            </h1>
+            <p class="text-center text-dark-3 text-[1rem] mb-[1.5rem] font-poppins">There are many variations of
+                passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+                humour.</p>
             <!-- flex container -->
             <div class="lg:flex  justify-between  md:gap-16 items-center flex-row-reverse space-y-10">
 
@@ -497,15 +437,22 @@
 
                 <form action="" class="flex-1 flex flex-col gap-y-8 pt-8">
 
-                    <input type="text" placeholder="Your Name" class="text-[1rem] text-dark-3 font-poppins bg-dark-7 rounded-[0.5rem] p-[1.4375rem] flex-1"> 
+                    <input type="text" placeholder="Your Name"
+                        class="text-[1rem] text-dark-3 font-poppins bg-dark-7 rounded-[0.5rem] p-[1.4375rem] flex-1">
 
-                    <input type="email" placeholder="Your Email" class="text-[1rem] text-dark-3 font-poppins bg-dark-7 rounded-[0.5rem] p-[1.4375rem] flex-1" required>
+                    <input type="email" placeholder="Your Email"
+                        class="text-[1rem] text-dark-3 font-poppins bg-dark-7 rounded-[0.5rem] p-[1.4375rem] flex-1"
+                        required>
 
-                    <input type="text" placeholder="subject" class="text-[1rem] text-dark-3 font-poppins bg-dark-7 rounded-[0.5rem] p-[1.4375rem] flex-1"> 
+                    <input type="text" placeholder="subject"
+                        class="text-[1rem] text-dark-3 font-poppins bg-dark-7 rounded-[0.5rem] p-[1.4375rem] flex-1">
 
-                    <input type="text" placeholder="your Massage" class="text-[1rem] text-dark-3 font-poppins bg-dark-7 rounded-[0.5rem] p-[1.4375rem] h-[9.375rem] mb-[3.5rem] flex-1"> 
+                    <input type="text" placeholder="your Massage"
+                        class="text-[1rem] text-dark-3 font-poppins bg-dark-7 rounded-[0.5rem] p-[1.4375rem] h-[9.375rem] mb-[3.5rem] flex-1">
 
-                    <button type="submit" class="bg-brown-1 rounded-[0.5rem] lg:px-[13.1875rem] py-[1.3125rem] text-white font-semibold font-poppins">Send Message</button>
+                    <button type="submit"
+                        class="bg-brown-1 rounded-[0.5rem] lg:px-[13.1875rem] py-[1.3125rem] text-white font-semibold font-poppins">Send
+                        Message</button>
                 </form>
 
                 <!--  -->
@@ -513,39 +460,47 @@
 
                 <div class=" grid grid-cols-1 md:grid-cols-2 flex-1">
 
-                    <div class="bg-dark-7 py-[1.5rem] border-b-[1px]  border-dark-6 flex flex-col justify-center items-center">
+                    <div
+                        class="bg-dark-7 py-[1.5rem] border-b-[1px]  border-dark-6 flex flex-col justify-center items-center">
                         <img class="mx-auto mb-8" src="./images/address.png" alt="business">
-                        <h4 class="text-center text-[1.5rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Address</h4>
+                        <h4 class="text-center text-[1.5rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">
+                            Address</h4>
                         <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">A108 Adam Street,</p>
                         <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">New York, NY 535022</p>
                     </div>
-    
-    
-    
-    
-                    <div class="bg-dark-7 py-[1.5rem] border-b-[1px] md:border-l-[1px] border-dark-6 flex flex-col justify-center items-center">
+
+
+
+
+                    <div
+                        class="bg-dark-7 py-[1.5rem] border-b-[1px] md:border-l-[1px] border-dark-6 flex flex-col justify-center items-center">
                         <img class="mx-auto mb-8" src="./images/call.png" alt="business">
-                        <h4 class="text-center text-[1.5rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Call Us</h4>
+                        <h4 class="text-center text-[1.5rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Call
+                            Us</h4>
                         <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">+88 01750 00 00 00</p>
                         <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">+88 01750 00 00 00</p>
                     </div>
-    
-    
-                    <div class="bg-dark-7 py-[1.5rem] border-b-[1px]  md:border-b-0 border-dark-6 flex flex-col justify-center items-center">
+
+
+                    <div
+                        class="bg-dark-7 py-[1.5rem] border-b-[1px]  md:border-b-0 border-dark-6 flex flex-col justify-center items-center">
                         <img class="mx-auto mb-8" src="./images/email.png" alt="business">
-                        <h4 class="text-center text-[1.5rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Email Us</h4>
+                        <h4 class="text-center text-[1.5rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Email
+                            Us</h4>
                         <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">info@gmail.com</p>
                         <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">info@gmail.com</p>
                     </div>
-    
-    
-    
-    
-    
-    
-                    <div class="bg-dark-7 py-[1.5rem] border-b-[1px] md:border-l-[1px] md:border-b-0 border-dark-6 flex flex-col justify-center items-center">
+
+
+
+
+
+
+                    <div
+                        class="bg-dark-7 py-[1.5rem] border-b-[1px] md:border-l-[1px] md:border-b-0 border-dark-6 flex flex-col justify-center items-center">
                         <img class="mx-auto mb-8" src="./images/time.png" alt="business">
-                        <h4 class="text-center text-[1.5rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">Working Hours</h4>
+                        <h4 class="text-center text-[1.5rem] font-extrabold text-dark-2 font-garamond mb-[1.5rem]">
+                            Working Hours</h4>
                         <p class="text-center  text-[1rem] text-dark-3 font-poppins mb-8">Mon-Fri: 9AM to 5PM</p>
                         <p class="text-center text-[1rem] text-dark-3 font-poppins mb-8">Sunday: 9AM to 1 PM</p>
                     </div>
@@ -556,22 +511,23 @@
             </div>
         </section>
 
-    </main> 
+    </main>
 
 
 
     <footer class="footer bg-dark-1 text-base-content p-10 md:flex md:gap-6 justify-between">
         <nav class="lg:w-[20%]">
             <img class="mb-6" src="./images/logo2.png" alt="logo">
-            <p class="text-[1rem] text-dark-6 font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <p class="text-[1rem] text-dark-6 font-poppins">There are many variations of passages of Lorem Ipsum
+                available, but the majority have suffered alteration in some form, by injected humour.</p>
         </nav>
         <nav>
-          <h6 class="footer-title text-[1.5rem] mb-[2.9375rem] font-garamond text-white">Usefull Link</h6>
-          <a class="link link-hover text-[1rem] text-dark-5 mb-6">Homes</a>
-          <a class="link link-hover text-[1rem] text-dark-5 mb-6">About Us</a>
-          <a class="link link-hover text-[1rem] text-dark-5 mb-6">Cases</a>
-          <a class="link link-hover text-[1rem] text-dark-5 mb-6">Blog</a>
-          <a class="link link-hover text-[1rem] text-dark-5 mb-6">Contact Us</a>
+            <h6 class="footer-title text-[1.5rem] mb-[2.9375rem] font-garamond text-white">Usefull Link</h6>
+            <a class="link link-hover text-[1rem] text-dark-5 mb-6">Homes</a>
+            <a class="link link-hover text-[1rem] text-dark-5 mb-6">About Us</a>
+            <a class="link link-hover text-[1rem] text-dark-5 mb-6">Cases</a>
+            <a class="link link-hover text-[1rem] text-dark-5 mb-6">Blog</a>
+            <a class="link link-hover text-[1rem] text-dark-5 mb-6">Contact Us</a>
         </nav>
         <nav>
             <h6 class="footer-title text-[1.5rem] mb-[2.9375rem] font-garamond text-white">Contact Now</h6>
@@ -584,18 +540,18 @@
         </nav>
         <form>
             <h6 class="footer-title text-[1.5rem] mb-[2.9375rem] font-garamond text-white">Subscribe</h6>
-          <fieldset class="form-control w-80">
-                <p class="link link-hover text-[1rem] text-dark-5 mb-6">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
-            <div class="join">
-              <input
-                type="text"
-                placeholder="Email Address"
-                class="input input-bordered join-item border-0 outline-0" />
-              <button class="btn bg-brown-1 join-item border-0 outline-0"><img src="./images/send.svg" alt="send"></button>
-            </div>
-          </fieldset>
+            <fieldset class="form-control w-80">
+                <p class="link link-hover text-[1rem] text-dark-5 mb-6">Subscribe for our latest & Articles. We Won’t
+                    Give You Spam Mails</p>
+                <div class="join">
+                    <input type="text" placeholder="Email Address"
+                        class="input input-bordered join-item border-0 outline-0" />
+                    <button class="btn bg-brown-1 join-item border-0 outline-0"><img src="./images/send.svg"
+                            alt="send"></button>
+                </div>
+            </fieldset>
         </form>
-      </footer>
+    </footer>
 
 
 
